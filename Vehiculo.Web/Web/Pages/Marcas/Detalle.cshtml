@@ -1,0 +1,26 @@
+﻿@page
+@model Web.Pages.Marcas.DetalleModel
+@{
+}
+<h1>Detalle Marca</h1>
+
+<div class="container">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo => modelo.marca.Id):</b>
+                        @Html.DisplayFor(modelo => modelo.marca.Id)
+                    </div>
+                    <div>
+                        <b>@Html.DisplayNameFor(modelo => modelo.marca.Nombre):</b>
+                        @Html.DisplayFor(modelo => modelo.marca.Nombre)
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a type="button" class="btn btn-primary" asp-page="./Index">Regresar</a>
+    <a type="button" class="btn btn-warning" asp-page="./Editar" asp-route-id="@Model.marca.Id">Editar</a>
+</div>
