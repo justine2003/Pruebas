@@ -20,7 +20,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Semana 09-Documentos/Vehiculo.API/BD/**'
+      - '/Vehiculo.API/BD/**'
   workflow_dispatch:
 
 permissions:
